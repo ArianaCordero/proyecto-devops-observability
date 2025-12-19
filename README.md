@@ -10,9 +10,9 @@ Aplicación Fullstack con Docker, CI/CD y stack completo de observabilidad (Prom
 
 ## URLs de Acceso
 
-- **Aplicación Web:** http://98.93.75.123
-- **Grafana Dashboard:** http://98.93.75.123:3000
-- **IP EC2:** 98.93.75.123
+- **Aplicación Web:** http://3.236.143.170
+- **Grafana Dashboard:** http://3.236.143.170:3000
+- **IP EC2:** 3.236.143.170
 
 ## Estructura del Proyecto
 ```
@@ -44,7 +44,7 @@ proyecto-devops/
 
 ## Conectarse a la Instancia EC2
 ```bash
-ssh -i infra/terraform/devops-key ubuntu@98.93.75.123
+ssh -i infra/terraform/devops-key ubuntu@3.236.143.170
 ```
 
 ## Desarrollo Local
@@ -73,7 +73,7 @@ El despliegue completo se realiza automáticamente mediante GitHub Actions al ha
 
 Para desplegar manualmente en EC2:
 ```bash
-ssh -i infra/terraform/devops-key ubuntu@98.93.75.123
+ssh -i infra/terraform/devops-key ubuntu@3.236.143.170
 cd /home/ubuntu/proyecto-devops
 git pull
 docker compose up -d --build
@@ -89,7 +89,7 @@ docker compose up -d --build
 - Docker Compose: v5.0.0
 
 **Security Groups:**
-- SSH (22): 181.115.171.5/32
+- SSH (22): 181.115.130.227/32
 - HTTP (80): 0.0.0.0/0
 - HTTPS (443): 0.0.0.0/0
 - Grafana (3000): 0.0.0.0/0
