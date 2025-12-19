@@ -38,6 +38,7 @@
 | **Melany Sonco** |
 | **Patricia Quisbert** | 
 | **Tatiana Aramayo** |
+
 ---
 
 ##  Objetivo del Proyecto
@@ -55,10 +56,10 @@ Diseñar, construir y desplegar una aplicación completa (Fullstack) utilizando 
 
 | Servicio | URL | Estado |
 |----------|-----|--------|
-| **Aplicación Web** | http://98.93.75.123 | 🟢 Disponible |
-| **Grafana Dashboard** | http://98.93.75.123:3000 | 🟢 Disponible |
+| **Aplicación Web** | http://3.236.143.170 | 🟢 Disponible |
+| **Grafana Dashboard** | http://3.236.143.170:3000 | 🟢 Disponible |
 | **Repositorio GitHub** | [proyecto-devops-observability](https://github.com/ArianaCordero/proyecto-devops-observability) | 🟢 Activo |
-| **IP EC2** | `98.93.75.123` | 🟢 Online |
+| **IP EC2** | `3.236.143.170` | 🟢 Online |
 
 ---
 
@@ -147,7 +148,7 @@ cd proyecto-devops-observability
 
 ### 2️ Conectarse a la Instancia EC2
 ```bash
-ssh -i infra/terraform/devops-key ubuntu@98.93.75.123
+ssh -i infra/terraform/devops-key ubuntu@3.236.143.170
 ```
 
 **Nota:** La clave privada `devops-key` NO está en el repositorio por seguridad. Contactar al equipo para obtenerla.
@@ -245,7 +246,7 @@ docker ps
 
 | Puerto | Protocolo | Origen | Servicio |
 |--------|-----------|--------|----------|
-| 22 | TCP | 181.115.171.5/32 | SSH (Restringido) |
+| 22 | TCP | 181.115.130.227/32 | SSH (Restringido) |
 | 80 | TCP | 0.0.0.0/0 | HTTP (Frontend) |
 | 443 | TCP | 0.0.0.0/0 | HTTPS (Futuro) |
 | 3000 | TCP | 0.0.0.0/0 | Grafana Dashboard |
