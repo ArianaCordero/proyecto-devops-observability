@@ -1,22 +1,32 @@
 *.pem
+*.key
 devops-key
 infra/terraform/devops-key
+credentials.txt
+
+.env
+.env.*
+*.env
+!.env.example
 
 *.tfstate
 *.tfstate.*
 .terraform/
 .terraform.lock.hcl
+terraform.tfvars
+*.tfvars
 
-*.csv
-credentials.txt
-
-.env
-*.env
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.vite/
+**/.vite/
+*.log
 
 .vscode/
 .idea/
-
 .DS_Store
 Thumbs.db
 
-node_modules/
+*.csv
