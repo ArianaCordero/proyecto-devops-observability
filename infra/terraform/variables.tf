@@ -19,13 +19,13 @@ variable "instance_type" {
 variable "allowed_ssh_cidr" {
   description = "CIDR permitido para SSH"
   type        = string
-  default     = "181.115.171.5/32"
+  default     = "0.0.0.0/0"
 }
 
 variable "allowed_http_cidr" {
   description = "CIDR permitido para acceso web"
   type        = string
-  default     = "0.0.0.0/0"
+  default     = "181.115.130.227/32" 
 }
 
 variable "key_name" {
